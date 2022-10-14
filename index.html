@@ -14,16 +14,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
   <!-- ICON -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <link rel="stylesheet" href="./css/main.css" />
   <script defer src="./js/main.js"></script>
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
     <div class="inner">
       <div class="header-top">
@@ -66,8 +72,8 @@
                   <li>
                     <h3>카드 추천</h3>
                     <ul>
-                      <li>카드 이벤트</li>
-                      <li>나의 BEST 카드 찾기</li>
+                      <li>카드 이벤트 <strong class="red-n">N</strong></li>
+                      <li>나의 BEST 카드 찾기 <strong class="best-menu">BEST</strong></li>
                       <li>인기 카드 TOP 10</li>
                       <li>연회비 지원 상품</li>
                       <li>테마별 카드추천</li>
@@ -306,6 +312,862 @@
       </div>
     </div>
   </header>
+
+  <!-- CARD RANKING -->
+  <section class="card">
+    <div class="ranking-bg">
+      <div class="inner">
+        <div class="rank-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span class="rank--num">1</span>
+                <a href="javascript:void(0)">삼성카드 taptap O</a>
+                <img src="./images/cardrank1.png" alt="cardrank1" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">2</span>
+                <a href="javascript:void(0)">신한카드 후불하이패스+(하이패스 전용)</a>
+                <img src="./images/cardrank2.png" alt="cardrank2" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">3</span>
+                <a href="javascript:void(0)">신한 Hi-Point 카드</a>
+                <img src="./images/cardrank3.png" alt="cardrank3" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">4</span>
+                <a href="javascript:void(0)">신한카드 YOLO ⓘ (미니언즈)</a>
+                <img src="./images/cardrank4.png" alt="cardrank4" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">5</span>
+                <a href="javascript:void(0)">청춘대로 톡톡카드</a>
+                <img src="./images/cardrank5.png" alt="cardrank5" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">6</span>
+                <a href="javascript:void(0)">탄탄대로 올쇼핑 티타늄카드</a>
+                <img src="./images/cardrank6.png" alt="cardrank6" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">7</span>
+                <a href="javascript:void(0)">삼성카드 taptap S</a>
+                <img src="./images/cardrank7.png" alt="cardrank7" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">8</span>
+                <a href="javascript:void(0)">신한카드 B.Big(삑)</a>
+                <img src="./images/cardrank8.png" alt="cardrank8" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">9</span>
+                <a href="javascript:void(0)">삼성카드 & MILEAGE PLATINUM(스카이패스)</a>
+                <img src="./images/cardrank9.png" alt="cardrank9" class="cardimg" />
+              </div>
+              <div class="swiper-slide">
+                <span class="rank--num">10</span>
+                <a href="javascript:void(0)">신한카드 Deep Dream</a>
+                <img src="./images/cardrank10.png" alt="cardrank10" class="cardimg" />
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="rank--btn">인기카드 더보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="visual1">
+              <div class="visual--container">
+                <h1 class="visual--title">금융을 내 편으로<br>뱅크샐러드</h1>
+                <div class="visual--btn">
+                  <a href="javascript:void(0)" class="btn btn--green">뱅크샐러드 사용해보기</a>
+                  <a href="javascript:void(0)" class="btn btn--white">서비스 더 알아보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual2">
+              <div class="visual--container">
+                <h1 class="visual--title"><small>대출 앞에 작아질 때!!</small><br>뱅크샐러드 금융매칭</h1>
+                <p class="sub--title">1분만에, 은행 방문 없이, 신용점수 영향 없이</p>
+                <div class="visual--btn">
+                  <a href="javascript:void(0)" class="btn btn--violet">내 최저금리 조회하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual3">
+              <div class="visual--container">
+                <h1 class="visual3--title">이벤트 응모하고<br>카드 사용하면<br>최대 89만원 받아요!</h1>
+                <p class="sub--title title--white">1분만에, 은행 방문 없이, 신용점수 영향 없이</p>
+                <div class="visual--btn">
+                  <a href="javascript:void(0)" class="btn btn--gold">이벤트 보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- MIDDLE -->
+  <section class="middle">
+    <div class="inner--container">
+      <div class="inner">
+        <h3 class="feature--title">내게 맞는 금융상품, 비교하기 힘드시죠?
+          <strong>뱅크샐러드는 쉽고 정확하게 비교합니다.</strong>
+        </h3>
+        <ul class="feature--contents">
+          <li>
+            <img src="./images/feature1.svg" alt="" class="feature--img" />
+            <div class="feature--desc">
+              <h1>국내 최대 금융상품 데이터</h1>
+              <h3>금융 상품 데이터뿐만 아니라, 전월 실적, 한도 조건 등 복잡하고 어려운 금융상품의 각종 조건 데이터까지 모두 챙겼습니다.</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./images/feature2.svg" alt="" class="feature--img" />
+            <div class="feature--desc">
+              <h1>나만을 위한 금융매칭</h1>
+              <h3>수백만가지 경우의 수를 계산하는 추천 알고리즘이 나를 위한 맞춤 상품을 찾아드립니다.</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./images/feature3.svg" alt="" class="feature--img" />
+            <div class="feature--desc">
+              <h1>광고나 홍보 없음</h1>
+              <h3>뱅크샐러드의 추천에는 광고도, 홍보도 없습니다. 오직 객관적인 데이터만을 활용합니다.</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANKSALAD PICK -->
+  <section class="bank--pick">
+    <div class="inner--container">
+      <div class="inner">
+        <h3 class="pick--title">뱅크샐러드 Pick!</h3>
+        <ul class="pick--container">
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>카드</h2>
+                    <h3>신용카드 추천</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-2-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>은행</h2>
+                    <h3>BEST 입출금통장</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-2-2.jpeg);"></div>
+                  <div class="pick">
+                    <h2>은행</h2>
+                    <h3>BEST 자유적금</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-2-3.jpeg);"></div>
+                  <div class="pick">
+                    <h2>은행</h2>
+                    <h3>쉽게 돈모으는 BEST 잔돈처축</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-3-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>투자</h2>
+                    <h3>투자 성향별 BEST 로보-어드바이저</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-3-2.jpeg);"></div>
+                  <div class="pick">
+                    <h2>투자</h2>
+                    <h3>증권사 CMA 체크카드</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-4-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>대출</h2>
+                    <h3>은행권 특징별 BEST 신용대출</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-5-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>연금</h2>
+                    <h3>연금저축, 어디서 가입할까?</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-5-2.jpeg);"></div>
+                  <div class="pick">
+                    <h2>연금</h2>
+                    <h3>연금저축 로보어드바이저 추천</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-6-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>핀테크</h2>
+                    <h3>4대 클라우드 펀딩 플랫폼 비교</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-6-2.jpeg);"></div>
+                  <div class="pick">
+                    <h2>핀테크</h2>
+                    <h3>케이뱅크VS카카오뱅크 비교분식</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-6-3.jpeg);"></div>
+                  <div class="pick">
+                    <h2>핀테크</h2>
+                    <h3>가상화폐 거래소 비교분석</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+          <li class="pick--contents">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-7-1.jpeg);"></div>
+                  <div class="pick">
+                    <h2>매거진</h2>
+                    <h3>나만을 위한 내 돈 관리 앱!</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-7-2.jpeg);"></div>
+                  <div class="pick">
+                    <h2>매거진</h2>
+                    <h3>항공사 마일리지 사용 팁</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-7-3.jpeg);"></div>
+                  <div class="pick">
+                    <h2>매거진</h2>
+                    <h3>편의점 1 + 1 행사의 비밀</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pick--img" style="background-image: url(./images/pick-contents-7-4.jpeg);"></div>
+                  <div class="pick">
+                    <h2>매거진</h2>
+                    <h3>금융상품 고를 때 가격 비교 쉽게 하는 팁</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper--btn">
+              <div class="swiper-prev">
+                <div class="material-icons">navigate_before</div>
+              </div>
+              <div class="swiper-next">
+                <div class="material-icons">navigate_next</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANK REVIEW -->
+  <section class="bank--review">
+    <div class="inner--container">
+      <div class="inner">
+        <h3 class="review--title">경제전문가의 금융리뷰</h3>
+        <ul class="contents--tabs">
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" checked />
+            <div class="tabs--btn">카드</div>
+          </li>
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" />
+            <div class="tabs--btn">은행</div>
+          </li>
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" />
+            <div class="tabs--btn">투자</div>
+          </li>
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" />
+            <div class="tabs--btn">대출</div>
+          </li>
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" />
+            <div class="tabs--btn">연금</div>
+          </li>
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" />
+            <div class="tabs--btn">핀테크</div>
+          </li>
+          <li>
+            <input type="radio" name="reviews" class="tabs--toggle" />
+            <div class="tabs--btn">매거진</div>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" checked />
+        <ul class="review--contents">
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-card-1.jpeg);"></div>
+            <div class="review--subtitle">자취족, 싱글족을 위한 카드</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-card-2.jpeg);"></div>
+            <div class="review--subtitle">주유 할인 카드</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-card-3.jpeg);"></div>
+            <div class="review--subtitle">온라인쇼핑 할인카드</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-card-4.jpeg);"></div>
+            <div class="review--subtitle">주부를 위한 카드</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-card-5.jpg);"></div>
+            <div class="review--subtitle">편의점 할인카드</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" />
+        <ul class="review--contents">
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-bank-1.jpeg);"></div>
+            <div class="review--subtitle">기본금리 높은 적금</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-bank-2.jpeg);"></div>
+            <div class="review--subtitle">기본금리 높은 예금</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" />
+        <ul class="review--contents">
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-investment-1.jpeg);"></div>
+            <div class="review--subtitle">연금저축펀드, TDF 비교분석!</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-investment-2.jpeg);"></div>
+            <div class="review--subtitle">주식거래를 위한 HTS/MTS</div>
+            <div class="author">이코노마드·돈과 행복의 지혜창고</div>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" />
+        <ul class="review--contents">
+          <li>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" />
+        <ul class="review--contents">
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-pension-1.png);"></div>
+            <div class="review--subtitle">국민연금 이해하기</div>
+            <div class="author">조진환·<7일 만에 끝내는 돈 공부>,<경제습관을 상속하라>저자</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-pension-2.jpeg);"></div>
+            <div class="review--subtitle">퇴직연금의 개념과 종류</div>
+            <div class="author">이코노마드·돈과 행복의 지혜창고</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-pension-3.jpeg);"></div>
+            <div class="review--subtitle">개인연금의 종류는?</div>
+            <div class="author">이코노마드·돈과 행복의 지혜창고</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-pension-4.png);"></div>
+            <div class="review--subtitle">연금저축의 개념과 종류</div>
+            <div class="author">김영일·포트윈 교육팀장</div>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" />
+        <ul class="review--contents">
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-fintech-1.jpeg);"></div>
+            <div class="review--subtitle">앱 하나로 다 해 주는 금융서비스 모음</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-fintech-2.jpeg);"></div>
+            <div class="review--subtitle">[사용자리뷰] 가상화폐 투자 플랫폼 Coinone</div>
+            <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+          </li>
+        </ul>
+        <input type="radio" name="review--tab" class="contents" />
+        <ul class="review--contents">
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-magazine-1.jpeg);"></div>
+            <div class="review--subtitle">가스비 아끼는 꿀팁</div>
+            <div class="author">윤성애·<돈 없어도 나는 재테크를 한다> 저자</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-magazine-2.jpeg);"></div>
+            <div class="review--subtitle">전기세 아끼는 꿀팁</div>
+            <div class="author">윤성애·<돈 없어도 나는 재테크를 한다> 저자</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-magazine-3.jpeg);"></div>
+            <div class="review--subtitle">항공권 취소하면, 환불받을 수 있을까?</div>
+            <div class="author">장은석·서울신문 기자</div>
+          </li>
+          <li>
+            <div class="review--img" style="background-image: url(./images/review-magazine-4.jpeg);"></div>
+            <div class="review--subtitle">해외 여행 시 신용카드 활용법!</div>
+            <div class="author">박주연·아시아경제TV 앵커</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANK TIP -->
+  <section class="bank--tip">
+    <div class="inner--container">
+      <div class="inner">
+        <h3 class="tip--title">부자되는 금융꿀팁</h3>
+        <ul class="contents--tabs">
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" checked />
+            <div class="tabs--btn">카드</div>
+          </li>
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" />
+            <div class="tabs--btn">은행</div>
+          </li>
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" />
+            <div class="tabs--btn">투자</div>
+          </li>
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" />
+            <div class="tabs--btn">대출</div>
+          </li>
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" />
+            <div class="tabs--btn">연금</div>
+          </li>
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" />
+            <div class="tabs--btn">핀테크</div>
+          </li>
+          <li>
+            <input type="radio" name="tips" class="tabs--toggle" />
+            <div class="tabs--btn">매거진</div>
+          </li>
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" checked />
+        <ul class="tip--contents">
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-card-1.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">디자인이 이쁜 카드</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-card-2.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">항공 마일리지 카드</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">후불 하이패스 카드</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">KTX 할인카드</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" />
+        <ul class="tip--contents">
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-bank-1.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">지출관리 고수가 되는 통장활용법</div>
+              <div class="author">한국금융투자자보호재단·투자자의 권익향상을 위한 비영리 공익재단</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-bank-2.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">재테크의 시작, 통장쪼개기 하는 법</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">은행거래 혜택 100% 활용하는 법</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">예적금 수익률을 높이는 8가지 팁</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">예적금 관리를 도와주는 서비스 총정리</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">나에게 맞는 예적금을 고르는 법</div>
+              <div class="author">윤성애·<돈 없어도 나는 재테크를 한다> 저자</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">아차! 돈을 잘못보낸 순간 대처법</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">주택청약종합저축 A to Z</div>
+              <div class="author">김현우·행복자산관리연구소 소장</div>
+            </div>
+          </li>
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" />
+        <ul class="tip--contents">
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-investment-1.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">CMA란 무엇인가?</div>
+              <div class="author">이종현·삼성자산운용 스마트마케팅팀</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-investment-2.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">최고의 CMA를 고르는 법</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">투자의 시작, 증권계좌 이해하기</div>
+              <div class="author">이코노마드·돈과 행복의 지혜창고</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">증권계좌 선택 시 고려할 포인트</div>
+              <div class="author">이코노마드·돈과 행복의 지혜창고</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">코스닥벤처펀드 투자시 고려할 3가지</div>
+              <div class="author">투자야 놀자·금융투자 전문 블로거</div>
+            </div>
+          </li>
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" />
+        <ul class="tip--contents">
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" />
+        <ul class="tip--contents">
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-pension-1.png);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">연금저축, 절세혜택만 알고 계신가요?</div>
+              <div class="author">김영일·포트윈 교육팀장</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-pension-2.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">연금 계좌에서 돈 꺼내는 순서</div>
+              <div class="author">김영일·포트윈 교육팀장</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">목돈이 필요할 때 연금저축을 해지해야 할까?</div>
+              <div class="author">뱅크샐러드·<뱅크샐러드> 금융매거진</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">주택연금 A to Z</div>
+              <div class="author">나원식·비즈니스워치 금융부 기자</div>
+            </div>
+          </li>
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" />
+        <ul class="tip--contents">
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-fintech-1.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">핀테크 개념 이해하기</div>
+              <div class="author">글쓰는핀테크·생생한 핀테크 이야기를 전해드립니다</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-fintech-2.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">블록체인 개념 이해하기</div>
+              <div class="author">글쓰는핀테크·생생한 핀테크 이야기를 전해드립니다</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">비트코인, 블록체인이란?</div>
+              <div class="author">easyblockchain·블록체인 분야 블로거</div>
+            </div>
+          </li>
+        </ul>
+        <input type="radio" name="tips--tab" class="contents" />
+        <ul class="tip--contents">
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-magazine-1.jpeg);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">최소한의 경제적 자유를 얻는 3가지</div>
+              <div class="author">차칸양·<불황을 이기는 월급의 경제학>의 저자</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--img" style="background-image: url(./images/tip-magazine-2.png);"></div>
+            <div class="tip--info">
+              <div class="tip--subtitle">경제적 자유를 얻으려면 당장 실행할 5가지</div>
+              <div class="author">조진환·<7일 만에 끝내는 돈 공부>,<경제습관을 상속하라>저자</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">저축을 가로막는 지출습관 탈출하기</div>
+              <div class="author">한국금융투자자보호재단·투자자의 권익향상을 위한 비영리 공익재단</div>
+            </div>
+          </li>
+          <li>
+            <div class="tip--info">
+              <div class="tip--subtitle">초보자를 위한 신용관리 개론</div>
+              <div class="author">유유자적·재테크 블로거</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download">
+    <div class="inner">
+      <h3>구글 플레이 선정 2016년 ‘올해를 빛낸 혁신적인 앱' 수상</h3>
+      <h1>금융을 내 편으로<br>뱅크샐러드 다운로드</h1>
+      <div class="download--img">
+        <a href="javascript:void(0)" class="google--down"></a>
+        <a href="javascript:void(0)" class="app--down"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALLIENCE -->
+  <section class="allience">
+    <div class="allience--img">
+      <img src="./images/allience-shinhan.png" alt="allience-shinhan" class="shinhan--img" />
+      <img src="./images/allience-samsung.png" alt="allience-samsung" class="samsung--img" />
+      <img src="./images/allience-nh.png" alt="allience-nh" class="nh--img" />
+      <img src="./images/allience-lotte.png" alt="allience-lotte" class="lotte--img" />
+      <img src="./images/allience-hyundai.png" alt="allience-hyundai" class="hyundai--img" />
+    </div>
+    <h1>뱅크샐러드는 금융사와의 제휴를 통해<br>정확한 금융 정보를 전달합니다</h1>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <p>뱅크샐러드는 IBK기업은행 카드 추천 솔루션 제작부터 KT CLiP 앱 카드데이터 제휴까지 다양한 파트너와 협업을 진행했습니다.<br>국내 최대 금융 데이터와 고도화된 금융추천엔진을 통해 사업을 발전시키고 싶다면 언제든 <span class="underline">rainist@rainist.com</span>으로 문의 주세요.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer--top">
+      <div class="top--left">
+        <a href="\" class="bank--img"></a>
+        <div class="footer--download">
+          <a href="javascript:void(0)" class="appstore"></a>
+          <a href="javascript:void(0)" class="playstore"></a>
+          <a href="javascript" class="certificate">앱 공식 페이지(공동인증서 센터)</a>
+        </div>
+      </div>
+      <div class="top--right">
+        <div class="footer--banksalad">
+          <h4 class="top--right--title">뱅크샐러드</h4>
+          <a href="javscript:void(0)" class="top--right--sitelink">뱅크샐러드 블로그</a>
+          <a href="javscript:void(0)" class="top--right--sitelink">뱅크샐러드 채용</a>
+          <a href="javscript:void(0)" class="top--right--sitelink">페이스북 페이지</a>
+        </div>
+        <div class="footer--banksalad">
+          <h4 class="top--right--title">추천메뉴</h4>
+          <a href="javscript:void(0)" class="top--right--sitelink">나의 BEST카드 찾기</a>
+          <a href="javscript:void(0)" class="top--right--sitelink">매거진</a>
+        </div>
+        <div class="footer--banksalad">
+          <h4 class="top--right--title">추천 금융 매거진</h4>
+          <a href="javscript:void(0)" class="top--right--sitelink">2019 최고의 신용카드</a>
+          <a href="javscript:void(0)" class="top--right--sitelink">최고의 신용카드를 고르는 방법</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer--bottom">
+      <ul class="policies">
+        <li>
+          <a href="javascript:void(0)">서비스문의</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">제휴문의</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">이용약관</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">오픈뱅킹 이용약관</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">뱅샐머니 이용약관</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">뱅샐머니 이용안내</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">개인정보처리방침</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">공지사항</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <span>© Banksalad Co., Ltd. All rights reserved.</span><br><br>
+        <span>(주)뱅크샐러드  |  대표: 김태훈  |  사업자등록번호: 105-87-73978  |  통신판매업신고: 2017-서울강남-00250</span><br><br>
+        <span>Email: <span class="italic">hello@banksalad.com</span> | 주소: 서울특별시 영등포구 여의대로 108, 43층(여의도동,파크원타워Ⅰ)</span><br><br>
+        <span>뱅크샐러드는 최신 금융 정보를 수집하기 위해 노력하고 있으며 정보 제공에 따른 법적 책임을 지지 않습니다.</span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
