@@ -1273,3 +1273,44 @@ footer .footer--bottom {
 .footer--bottom .copyright .italic {
   font-style: italic;
 }
+
+/* MEDIA */
+@media (max-width: 820px) {
+  header {
+    width: 820px;
+  }
+
+header .bottom-menu .item .item__contents .contents__menu>ul {
+  left: 0;
+}
+
+  .card .ranking-bg .inner .rank-container {
+    width: 756px !important;
+    padding: 0;
+  }
+
+  .card .ranking-bg .inner .rank-container .swiper {
+    width: calc(100% - 195px);
+  }
+
+  .inner--container .inner {
+    width: 756px;
+  }
+
+  .bank--review .review--contents > li {
+    width: calc(25% - 24px);
+  }
+
+  .bank--review .contents:checked+.review--contents {
+    width: 100%;
+  }
+
+  .bank--tip .tip--contents > li {
+    width: calc(50% - 24px);
+  }
+
+.bank--tip .tip--contents > li:first-child .tip--info,
+.bank--tip .tip--contents > li:nth-child(2) .tip--info {
+  width: calc(100% - 136px);
+}
+}
