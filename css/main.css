@@ -726,6 +726,7 @@ header .bottom-menu .item .item__contents .contents__menu>ul>li ul li:hover {
   box-shadow: 0 0 2px 0 rgb(0 0 0 / 26%);
   text-align: center;
   margin: 0;
+  cursor: pointer;
 }
 
 .bank--pick .swiper-prev .material-icons {
