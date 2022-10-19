@@ -765,6 +765,7 @@ header .bottom-menu .item .item__contents .contents__menu>ul>li ul li:hover {
   float: left;
   display: block;
   width: 12.5%;
+  cursor: pointer;
 }
 
 .bank--review .contents--tabs > li::after {
@@ -826,6 +827,7 @@ header .bottom-menu .item .item__contents .contents__menu>ul>li ul li:hover {
   width: 202px;
   height: 282px;
   margin: 0 24px 0 0;
+  cursor: pointer;
 }
 
 .bank--review .contents:checked+.loading--area {
@@ -921,6 +923,7 @@ header .bottom-menu .item .item__contents .contents__menu>ul>li ul li:hover {
   float: left;
   display: block;
   width: 12.5%;
+  cursor: pointer;
 }
 
 .bank--tip .contents--tabs > li::after {
@@ -979,6 +982,7 @@ header .bottom-menu .item .item__contents .contents__menu>ul>li ul li:hover {
   margin: 0 24px 0 0;
   border-top: 2px solid #f5f5f5;
   padding: 20px 0;
+  cursor: pointer;
 }
 
 .bank--tip .contents:checked+.loading--area {
