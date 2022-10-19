@@ -56,7 +56,7 @@ new Swiper('.visual .swiper', {
   centeredSlides: true,
   loop: false,
   autoplay: {
-    delay: 5000
+    delay: 3000
   },
   pagination: {
     el: '.visual .swiper-pagination',
