@@ -1344,7 +1344,7 @@ footer .footer--bottom {
   line-height: 12px;
 }
 
-.footer--bottom .policies li a:nth-child(6) {
+.footer--bottom .policies li .text--bold {
   font-weight: 700;
 }
 
